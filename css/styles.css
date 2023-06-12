@@ -184,3 +184,23 @@ footer img {
     }
 
 }
+
+/**************************************************/
+
+/* MOVIL */
+@media (max-width: 420px) {
+    footer .footer-text {
+        display: inline-block;
+        font-size: 0.95rem;
+        max-width: calc(100vw - 150px);
+        text-align: center;
+    }
+    footer img {
+        height: 25px;
+        top:20px
+    }
+
+    footer {
+        text-align: left;
+    }
+}
