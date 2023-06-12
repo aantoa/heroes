@@ -29,6 +29,7 @@ main {
 
 footer {
     margin-top: autos;
+    position: relative;
 }
 
 /* HEADER */
@@ -93,6 +94,7 @@ article.card img.personaje {
     left: calc(50% - 60px);
     top: calc(100% - 62px);
     filter: drop-shadow(0px 4px 4px rgba(0, 0, 0, 0.25));
+    width: 120px;
 }
 
 article.card .card-content {
@@ -121,17 +123,64 @@ article.card .card-content .card-button span {
     display: inline-block;
     padding: 16px 36px;
 }
-
-
+div.button{
+    background-color: #00669F;
+    color: white;
+    display: flex;
+    font-size: 1.5rem;
+    justify-content: center;
+    align-items: center;
+    width: 40px;
+    height: 40px;
+    border-radius: 50%;
+    position: absolute;
+    right: 10px;
+    top: calc(50% - 20px)
+}
 
 /* FOOTER */
 
 footer {
     background-color: #00669F;
     padding: 16px 28px;
+    text-align: center;
 }
 
 footer .footer-text {
     color: #FFF9F9;
     font-size: 1rem;
+}
+
+footer img {
+    position: absolute;
+    height: 30px;
+    right: 15px;
+    top: 10px;
+}
+
+/**************************************************/
+
+/* TABLET */
+@media (max-width: 1023px) {
+
+    header p {
+        background-color: #D1891C;        ;
+        padding-top: 0px;
+        padding-bottom: 0px;
+    }
+    
+    header h1 {
+        color: white;
+        font-size: 2rem;
+        padding: 15px;
+    }
+    main {
+        max-height: calc(100vh - 138px);
+        padding: 40px 60px;
+    }
+
+    main section {
+        row-gap: 60px;
+    }
+
 }
